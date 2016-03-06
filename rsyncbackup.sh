@@ -49,7 +49,6 @@ if [ -a $RSB_INCL_FILE ]
   fi
 
 $RSB_CMD_PRE mkdir -p "$RSB_DEST_DIR/archive"
-$RSB_CMD_PRE mkdir -p "$RSB_TMP_DIR"
 mkdir -p "$RSB_LOG_DIR"
 mkdir -p "$RSB_TMP_DIR"
 

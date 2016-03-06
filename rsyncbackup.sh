@@ -50,8 +50,8 @@ if [ -a $RSB_INCL_FILE ]
 
 $RSB_CMD_PRE mkdir -p "$RSB_DEST_DIR/archive"
 $RSB_CMD_PRE mkdir -p "$RSB_TMP_DIR"
-mkdir "$RSB_LOG_DIR"
-mkdir "$RSB_TMP_DIR"
+mkdir -p "$RSB_LOG_DIR"
+mkdir -p "$RSB_TMP_DIR"
 
 echo "DEST: $RSB_DEST"
 

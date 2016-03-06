@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo "****************************"
+echo "* Performing Backup        *"
+echo "* DO NOT CLOSE THIS WINDOW *"
+echo "****************************"
+
 DATE=`date +%y%m%d-%H%M%S`
 #echo $DATE
 
@@ -52,7 +57,7 @@ $RSB_CMD_PRE mkdir -p "$RSB_DEST_DIR/archive"
 mkdir -p "$RSB_LOG_DIR"
 mkdir -p "$RSB_TMP_DIR"
 
-echo "DEST: $RSB_DEST"
+#echo "DEST: $RSB_DEST"
 
 $RSB_RSYNC_PRE rsync -aHv --delete $RSB_INCL_OPT $RSB_LINK_DEST_OPT "$RSB_SRC_BASE" "$RSB_DEST" > "$RSB_LOG_FILE"
 
